@@ -19,10 +19,10 @@ the scenario_runner also the upcoming [OpenSCENARIO](http://www.openscenario.org
 [![Scenario_Runner for CARLA](Docs/img/scenario_runner_video.png)](https://youtu.be/ChmF8IFagpo?t=68)
 
 This also contains the supervisory controller Program P emebedded with the following assertions:
-# -- Stop at Red Light
-# -- Maintain Longitudinal and Lateral safe distance
-# -- Junction priority (This is implemented in _is_junction_hazard in agent.py)
-# -- Lane clearace before lane change
+ -- Stop at Red Light
+ -- Maintain Longitudinal and Lateral safe distance
+ -- Junction priority (This is implemented in _is_junction_hazard in agent.py)
+ -- Lane clearace before lane change
 
 
 Getting the ScenarioRunner for HPRL
