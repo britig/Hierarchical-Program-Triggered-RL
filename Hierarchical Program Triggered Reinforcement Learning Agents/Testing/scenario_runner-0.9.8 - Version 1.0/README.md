@@ -43,7 +43,7 @@ System Configuration
 --------------------
 
 The code has been developed and tested on a laptop with 4-core 2.4GHz Intel Core i5 9th Gen and NVIDIA GeForce GTX TITAN
-in Windows Operating System
+in Windows Operating System. This also works in linux/ubuntu with few modifications (The user may debug this during installation).
 
 **Rquired** - Place this folder inside CARLA_0.9.8\WindowsNoEditor\PythonAPI\examples\ or import the carla egg file from proper location
 **Rquired** - Change sys path to carla path in your folder in the file challenges/env/scene_layout_sensor.py , install dependencies (py_trees,xmlschema,shapely etc mentioned in requirements.txt)
