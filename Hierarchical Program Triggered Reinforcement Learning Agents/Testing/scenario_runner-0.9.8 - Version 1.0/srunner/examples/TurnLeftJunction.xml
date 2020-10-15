@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="VehicleTurnLeftAtJunction_1" type="VehicleTurnLeftAtJunction" town="Town03">
+        <ego_vehicle x="-131.6" y="138.0" z="0.2" yaw="0" model="vehicle.lincoln.mkz2017" />
+        <other_actor x="-44.2" y="129.5" z="0.0" yaw="180" model="vehicle.tesla.model3" />
+     </scenario>
+</scenarios>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="SignalizedJunctionRightTurn_1" type="SignalizedJunctionRightTurn" town="Town03">
+		<straight startx="53" starty="128.1" endx="20" endy="129"/>
+		<right_turn startx="18" starty="129.3" endx="4.2" endy="114.5"/>
+		<straight startx="17.5" starty="129.3" endx="5" endy="62"/>
+    </scenario>
+</scenarios>

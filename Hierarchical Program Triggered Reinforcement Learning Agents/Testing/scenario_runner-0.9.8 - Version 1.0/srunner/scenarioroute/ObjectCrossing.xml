@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="StationaryObjectCrossing_3" type="StationaryObjectCrossing" town="Town03">
+        <straight startx="239.39" starty="113.42" endx="239.39" endy="50" />
+    </scenario>
+    <scenario name="DynamicObjectCrossing_3" type="DynamicObjectCrossing" town="Town03">
+        <ego_vehicle x="110" y="129" z="1" yaw="180" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="StationaryObjectCrossing_4" type="StationaryObjectCrossing" town="Town03">
+        <straight startx="232.36" starty="113.29" endx="232.36" endy="50"/>
+    </scenario>
+    <scenario name="DynamicObjectCrossing_4" type="DynamicObjectCrossing" town="Town03">
+        <ego_vehicle x="232.36" y="113.29" z="2.46" yaw="90" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="DynamicObjectCrossing_9" type="DynamicObjectCrossing" town="Town03">
+        <ego_vehicle x="90" y="129" z="1" yaw="180" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+</scenarios>

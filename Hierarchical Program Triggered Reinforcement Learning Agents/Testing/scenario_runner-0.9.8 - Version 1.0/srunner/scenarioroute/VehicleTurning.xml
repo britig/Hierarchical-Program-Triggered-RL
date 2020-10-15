@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="VehicleTurningRight_7" type="VehicleTurningRight" town="Town03">
+        <straight startx="-74.32" starty="-50" endx="-74.32" endy="-120.0"/>
+		<right_turn startx="-74.32" starty="-120.0" endx="-57.5" endy="-133.9"/>
+		<straight startx="-57.5" starty="-133.9" endx="-40" endy="-133.9"/>
+    </scenario>
+    <scenario name="VehicleTurningLeft_7" type="VehicleTurningLeft" town="Town03">
+        <straight startx="-74.32" starty="-50" endx="-74.32" endy="-172.0"/>
+		<right_turn startx="-74.32" starty="-172.0" endx="-74.32" endy="-195.0"/>
+    </scenario>
+</scenarios>

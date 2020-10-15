@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="OppositeVehicleRunningRedLight031" type="OppositeVehicleRunningRedLight" town="Town03">
+        <straight startx="-2.8" starty="-184" endx="2.8" endy="-90"/>
+    </scenario>
+</scenarios>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="ManeuverOppositeDirection_1" type="ManeuverOppositeDirection" town="Town03">
+        <straight startx="17" starty="136" endx="120" endy="136"/>
+    </scenario>
+</scenarios>

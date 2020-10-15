@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="ChangeLane" type="ChangeLane" town="Town04">
+        <straight startx="284.4" starty="16.4" endx="5" endy="20"/>
+    </scenario>
+</scenarios>

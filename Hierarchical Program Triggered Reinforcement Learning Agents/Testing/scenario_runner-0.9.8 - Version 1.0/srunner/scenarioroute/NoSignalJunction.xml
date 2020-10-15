@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="NoSignalJunctionCrossing" type="NoSignalJunctionCrossing" town="Town03">
+        <straight startx="-74.32" starty="-50" endx="-74.2" endy="-156"/>
+    </scenario>
+</scenarios>

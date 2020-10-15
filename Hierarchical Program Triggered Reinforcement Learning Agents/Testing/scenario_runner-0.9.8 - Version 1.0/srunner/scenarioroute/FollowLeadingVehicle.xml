@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="FollowLeadingVehicle_4" type="FollowLeadingVehicle" town="Town03">
+        <straight startx="120" starty="193" endx="-2" endy="199"/>
+    </scenario>
+    <scenario name="FollowLeadingVehicleWithObstacle_4" type="FollowLeadingVehicleWithObstacle" town="Town03">
+        <straight x="150" y="193.2" endx="-2" endy="199" />
+    </scenario>
+</scenarios>

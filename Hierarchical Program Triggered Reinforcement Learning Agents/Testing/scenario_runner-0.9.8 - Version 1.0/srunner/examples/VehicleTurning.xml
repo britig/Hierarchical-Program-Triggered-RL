@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="VehicleTurningRight_7" type="VehicleTurningRight" town="Town03">
+        <ego_vehicle x="-74.32" y="-50" z="0.5" yaw="270" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="VehicleTurningLeft_7" type="VehicleTurningLeft" town="Town03">
+        <ego_vehicle x="-74.32" y="-50" z="0.5" yaw="270" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+</scenarios>

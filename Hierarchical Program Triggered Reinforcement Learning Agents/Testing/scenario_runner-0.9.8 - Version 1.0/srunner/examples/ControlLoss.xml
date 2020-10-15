@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="ControlLoss_1" type="ControlLoss" town="Town01">
+        <ego_vehicle x="392.5" y="195" z="0.5" yaw="90" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="ControlLoss_8" type="ControlLoss" town="Town03">
+        <ego_vehicle x="-74" y="-12" z="0.1" yaw="270" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="ControlLoss_9" type="ControlLoss" town="Town03">
+        <ego_vehicle x="-85.1" y="-87.4" z="0.3" yaw="89" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+</scenarios>

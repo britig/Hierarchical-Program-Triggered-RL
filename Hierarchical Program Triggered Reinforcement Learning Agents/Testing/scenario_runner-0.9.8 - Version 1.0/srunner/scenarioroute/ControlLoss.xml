@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="ControlLoss_1" type="ControlLoss" town="Town01">
+        <straight startx="392.5" starty="195" endx="392.5" endy="300"/>
+    </scenario>
+    <scenario name="ControlLoss_8" type="ControlLoss" town="Town03">
+        <straight startx="-74" starty="-12" endx="-74" endy="-100"/>
+    </scenario>
+    <scenario name="ControlLoss_9" type="ControlLoss" town="Town03">
+        <straight startx="-85.1" starty="-87.4" endx="-85.1" endy="20"/>
+    </scenario>
+</scenarios>

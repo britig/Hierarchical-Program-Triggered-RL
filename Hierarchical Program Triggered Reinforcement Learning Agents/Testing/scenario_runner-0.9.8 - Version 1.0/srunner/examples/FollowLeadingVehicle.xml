@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="FollowLeadingVehicle_4" type="FollowLeadingVehicle" town="Town03">
+        <ego_vehicle x="120" y="193" z="3" yaw="180" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="FollowLeadingVehicleWithObstacle_4" type="FollowLeadingVehicleWithObstacle" town="Town03">
+        <ego_vehicle x="150" y="193.2" z="3" yaw="180" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+</scenarios>
