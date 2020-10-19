@@ -1,5 +1,5 @@
 # Hierarchical-Program-Triggered-RL
-This folder contains the experiments and code for Hierarchical Program Triggered RL paper
+This folder contains the experiments and code for Hierarchical Program Triggered RL paper (In Submission)
 
 Scenario Runner documentation : https://carla-scenariorunner.readthedocs.io/en/latest/
 List of Supported Scenario : https://carla-scenariorunner.readthedocs.io/en/latest/list_of_scenarios/
