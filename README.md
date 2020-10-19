@@ -5,6 +5,9 @@ Scenario Runner documentation : https://carla-scenariorunner.readthedocs.io/en/l
 List of Supported Scenario : https://carla-scenariorunner.readthedocs.io/en/latest/list_of_scenarios/
 
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/ControlLoss1.gif)  |  ![](https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/NoSignalJunction.gif)
 
 <img src="https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/ControlLoss1.gif" width="300" height="250">
 <img src="https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/NoSignalJunction.gif" width="300" height="250">
