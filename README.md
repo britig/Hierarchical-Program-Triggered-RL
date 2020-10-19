@@ -6,7 +6,7 @@ List of Supported Scenario : https://carla-scenariorunner.readthedocs.io/en/late
 
 
 
-<img src="https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/ControlLoss1.gif" width="200" height="200">
+<img src="https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/ControlLoss1.gif" width="300" height="250">
 ![alt text](https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/ControlLoss1.gif)
 ![alt text](https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/NoSignalJunction.gif)
 ![alt text](https://github.com/britig/Hierarchical-Program-Triggered-RL/blob/main/Hierarchical%20Program%20Triggered%20Reinforcement%20Learning%20Agents/GIF/Scenario6.gif)
