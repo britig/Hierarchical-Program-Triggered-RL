@@ -5,7 +5,7 @@ This folder contains the experiments and code for Hierarchical Program Triggered
 
 ### Training
 
-Contains code for training the Deep Q Learning and the Deep Deterministic policy gradient networks.
+Contains code for training the Deep Q Learning and the Deep Deterministic policy gradient agents.
 
 ### Testing
 
