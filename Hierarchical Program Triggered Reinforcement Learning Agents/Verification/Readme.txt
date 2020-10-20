@@ -3,7 +3,7 @@ Dependencies
 pip install nagini
 
 Install Java 11 or newer (64 bit) and Python 3.6 or newer (64 bit).
-Install either Visual C++ Build Tools 2015
+Install either Visual C++ Build Tools 2015 (For Windows) or make in Linux
 
 Set
 
