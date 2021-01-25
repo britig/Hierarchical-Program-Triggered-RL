@@ -79,7 +79,7 @@ To run a challenge route scenario follow the below steps:
 
 1) Start CARLA server
 2) Open command promt/Terminal and cd to base folder of scenario_runner-0.9.8 - V1.0 and execute python scenario_runner.py --route srunner/challenge/routes_custom.xml srunner/challenge/all_towns_traffic_scenarios.json 0
-3) Open a second command promt/Terminal and cd to base folder of scenario_runner-0.9.8 - V1.0 and execute python nn_control.py --scenario routes_challenge
+3) Open a second command promt/Terminal and cd to base folder of scenario_runner-0.9.8 - V1.0 and execute python nn_control.py --scenario Challenge
 
 
 Things to keep in mind:
