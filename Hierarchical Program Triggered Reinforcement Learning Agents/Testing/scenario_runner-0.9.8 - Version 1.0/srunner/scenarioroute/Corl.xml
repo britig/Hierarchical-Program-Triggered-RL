@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="CorlStraight_1" type="CorlStraight" town="Town01">
+        <straight startx="392.5" starty="195" endx="392.5" endy="350"/>
+    </scenario>
+    <scenario name="CorlStraight_2" type="CorlStraight" town="Town01">
+        <straight startx="256.6" starty="-2.0" endx="160" endy="-1.9"/>
+    </scenario>
+    <scenario name="CorlStraight_3" type="CorlStraight" town="Town01">
+        <straight startx="229.0" starty="133.2" endx="320.7" endy="133.3"/>
+    </scenario>
+    <scenario name="CorlStraight_4" type="CorlStraight" town="Town01">
+        <straight startx="96.6" starty="-2.0" endx="19.8" endy="-2.1"/>
+    </scenario>
+    <scenario name="CorlStraight_5" type="CorlStraight" town="Town01">
+        <straight startx="98.8" starty="59.6" endx="182.0" endy="59.9"/>
+    </scenario>
+    <scenario name="CorlStraight_6" type="CorlStraight" town="Town01">
+        <straight startx="324.6" starty="325.6" endx="244.3" endy="325.8"/>
+    </scenario>
+    <scenario name="CorlStraight_7" type="CorlStraight" town="Town01">
+        <straight startx="244.3" starty="325.8" endx="160.0" endy="326.1"/>
+    </scenario>
+    <scenario name="CorlStraight_8" type="CorlStraight" town="Town01">
+        <straight startx="160.0" starty="326.1" endx="84.8" endy="326.2"/>
+    </scenario>
+    <scenario name="CorlStraight_9" type="CorlStraight" town="Town01">
+        <straight startx="84.8" starty="326.2" endx="16.2" endy="326.3"/>
+    </scenario>
+    <scenario name="CorlStraight_10" type="CorlStraight" town="Town02">
+        <straight startx="193.2" starty="242.7" endx="193.3" endy="125.5"/>
+    </scenario>
+    <scenario name="CorlStraight_11" type="CorlStraight" town="Town02">
+        <straight startx="92.3" starty="187.9" endx="10.4" endy="188.8"/>
+    </scenario>
+    <scenario name="CorlStraight_12" type="CorlStraight" town="Town02">
+        <straight startx="-4.7" starty="243.6" endx="-4.3" endy="123.8"/>
+    </scenario>
+    <scenario name="CorlStraight_13" type="CorlStraight" town="Town02">
+        <straight startx="33.6" starty="109.6" endx="172.9" endy="109.0"/>
+    </scenario>
+    <scenario name="CorlStraight_14" type="CorlStraight" town="Town02">
+        <straight startx="190.6" starty="120.0" endx="190.3" endy="198.1"/>
+    </scenario>
+    <scenario name="CorlStraight_15" type="CorlStraight" town="Town02">
+        <straight startx="190.3" starty="198.1" endx="189.3" endy="287.0"/>
+    </scenario>
+    <scenario name="CorlStraight_16" type="CorlStraight" town="Town02">
+        <straight startx="174.5" starty="303.3" endx="59.0" endy="303.5"/>
+    </scenario>
+    <scenario name="CorlStraight_17" type="CorlStraight" town="Town02">
+        <straight startx="44.9" starty="290.3" endx="45.7" endy="303.5"/>
+    </scenario>
+    <scenario name="OneTurn_1" type="OneTurn" town="Town01">s
+        <right_turn startx="325.0" starty="133.2" endx="336.9" endy="148.4"/>
+        <straight startx="336.9" starty="148.4" endx="336.9" endy="160"/>
+    </scenario>
+    <scenario name="OneTurn_2" type="OneTurn" town="Town01">s
+        <straight startx="395.9" starty="35.6" endx="395.8" endy="11.4"/>
+        <left_turn startx="395.8" starty="10.4" endx="384.3" endy="-1.0"/>
+    </scenario>
+    <scenario name="OneTurn_3" type="OneTurn" town="Town01">s
+        <straight startx="335.1" starty="160.4" endx="334.7" endy="182.5"/>
+        <right_turn startx="333.8" starty="14.4" endx="321.3" endy="194.3"/>
+    </scenario>
+    <scenario name="OneTurn_4" type="OneTurn" town="Town01">s
+        <straight startx="285.4" starty="199.1" endx="322.3" endy="198.4"/>
+        <right_turn startx="320.3" starty="198.4" endx="335.6" endy="213"/>
+    </scenario>
+    <scenario name="OneTurn_5" type="OneTurn" town="Town02">s
+        <straight startx="184.2" starty="238.2" endx="147.9" endy="236.8"/>
+        <right_turn startx="147.9" starty="236.8" endx="135.1" endy="222.0"/>
+    </scenario>
+    <scenario name="OneTurn_6" type="OneTurn" town="Town02">s
+        <straight startx="135.1" starty="222.0" endx="136.3" endy="203.9"/>
+        <right_turn startx="136.3" starty="202.9" endx="149.9" endy="191.6"/>
+    </scenario>
+    <scenario name="Navigation_1" type="Navigation" town="Town01">
+        <straight startx="250.0" starty="133.2" endx="325.0" endy="133.2"/>
+        <right_turn startx="325.0" starty="133.2" endx="336.9" endy="148.4"/>
+        <straight startx="336.9" starty="148.4" endx="336.9" endy="180"/>
+    </scenario>
+    <scenario name="Navigation_2" type="Navigation" town="Town01">
+        <straight startx="170.8" starty="130.0" endx="104.7" endy="129.4"/>
+        <right_turn startx="104.7" starty="129.4" endx="91.8" endy="114.6"/>
+        <straight startx="91.8" starty="114.6" endx="91.3" endy="74.1"/>
+        <right startx="91.3" starty="74.1" endx="113.2" endy="59.2"/>
+    </scenario>
+    <scenario name="Navigation_3" type="Navigation" town="Town01">
+        <straight startx="1.6" starty="60.0" endx="1.6" endy="15.4"/>
+        <right_turn startx="1.6" starty="15.4" endx="15.1" endy="1.6"/>
+        <straight startx="15.1" starty="1.6" endx="79.7" endy="1.5"/>
+        <right startx="91.3" starty="74.1" endx="113.2" endy="59.2"/>
+    </scenario>
+    <scenario name="Navigation_4" type="Navigation" town="Town02">
+        <straight startx="64.4" starty="241.6" endx="129.2" endy="241.5"/>
+        <left_turn startx="129.2" starty="241.5" endx="136.9" endy="230.1"/>
+        <straight startx="136.7" starty="230.1" endx="135.5" endy="202.2"/>
+    </scenario>
+    <scenario name="Navigation_5" type="Navigation" town="Town02">
+        <straight startx="184.2" starty="238.2" endx="147.9" endy="236.8"/>
+        <right_turn startx="147.9" starty="236.8" endx="135.1" endy="222.0"/>
+        <straight startx="135.1" starty="222.0" endx="136.3" endy="203.9"/>
+        <right_turn startx="136.3" starty="202.9" endx="149.9" endy="191.6"/>
+        <straight startx="149.9" starty="191.6" endx="159.9" endy="191.6"/>
+    </scenario>
+</scenarios>

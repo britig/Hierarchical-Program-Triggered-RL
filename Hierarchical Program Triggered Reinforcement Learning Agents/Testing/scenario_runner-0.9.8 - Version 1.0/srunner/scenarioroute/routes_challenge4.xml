@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<routes>
+	<scenario name="Challenge4" type="Challenge" town="Town01">
+        <straight startx="194.5" starty="198.8" endx="314.5" endy="198.7"/>
+    </scenario>
+    <scenario name="Challenge5" type="Challenge" town="Town01">
+        <straight startx="395.9" starty="75.6" endx="395.8" endy="11.4"/>
+        <left_turn startx="395.8" starty="10.4" endx="384.3" endy="-1.0"/>
+        <straight startx="387.3" starty="-0.9" endx="343.9" endy="-0.9"/>
+        <left_turn startx="343.9" starty="-0.9" endx="335.1" endy="12.8"/>
+    </scenario>
+    <scenario name="Challenge6" type="Challenge" town="Town01">
+        <straight startx="335.1" starty="140.4" endx="334.7" endy="182.5"/>
+        <right_turn startx="333.8" starty="14.4" endx="321.3" endy="194.3"/>
+        <straight startx="321.3" starty="194.3" endx="111.0" endy="196.1"/>
+    </scenario>
+    <scenario name="Challenge7" type="Challenge" town="Town01">
+        <straight startx="261.4" starty="199.1" endx="322.3" endy="198.4"/>
+        <right_turn startx="320.3" starty="198.4" endx="335.6" endy="213"/>
+        <straight startx="336" starty="211" endx="336" endy="293"/>
+    </scenario>
+    <scenario name="Challenge8" type="Challenge" town="Town02">
+        <straight startx="64.4" starty="241.6" endx="127.2" endy="241.5"/>
+        <left_turn startx="127.2" starty="241.5" endx="136.7" endy="230.1"/>
+        <straight startx="136.7" starty="230.3" endx="135.5" endy="202.2"/>
+    </scenario>
+    <scenario name="Challenge9" type="Challenge" town="Town02">
+        <straight startx="184.2" starty="238.2" endx="147.9" endy="236.8"/>
+        <right_turn startx="147.9" starty="236.8" endx="135.1" endy="222.0"/>
+        <straight startx="135.1" starty="222.0" endx="136.3" endy="203.9"/>
+        <right_turn startx="136.3" starty="202.9" endx="149.9" endy="191.6"/>
+        <straight startx="149.9" starty="191.6" endx="163" endy="191.6"/>
+    </scenario>
+</routes>

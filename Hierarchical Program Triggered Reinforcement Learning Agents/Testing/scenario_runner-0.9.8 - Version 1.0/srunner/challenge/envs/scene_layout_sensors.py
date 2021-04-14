@@ -2,7 +2,7 @@
 import time
 import sys
 
-sys.path.append('D:/Briti/CARLA_0.9.8/WindowsNoEditor/PythonAPI/carla/')
+sys.path.append('/home/briti/Briti/CARLA_0.9.8/PythonAPI/carla/')
 
 from threading import Thread
 from srunner.scenariomanager.carla_data_provider import CarlaDataProvider

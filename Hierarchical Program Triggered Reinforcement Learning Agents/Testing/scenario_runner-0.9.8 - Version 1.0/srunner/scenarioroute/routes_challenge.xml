@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<routes>
+	<scenario name="Challenge" type="Challenge" town="Town03">
+        <straight startx="-63" starty="135" endx="-24" endy="135"/>
+        <right_turn startx="-24" starty="135" endx="-9" endy="150"/>
+        <straight startx="-9" starty="150" endx="-9" endy="182"/>
+        <right_turn startx="-9" starty="182" endx="-18" endy="202"/>
+        <straight startx="-18" starty="202" endx="-40" endy="202"/>
+        <right_turn startx="-40" starty="202" endx="-48" endy="200"/>
+        <straight startx="-48" starty="202" endx="-67" endy="192"/>
+        <right_turn startx="-67" starty="192" endx="-74" endy="174"/>
+        <straight startx="-74" starty="174" endx="-75" endy="0"/>
+    </scenario>
+</routes>

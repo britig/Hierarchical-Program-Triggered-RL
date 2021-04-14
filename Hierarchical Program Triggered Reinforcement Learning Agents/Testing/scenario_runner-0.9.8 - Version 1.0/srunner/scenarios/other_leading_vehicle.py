@@ -41,7 +41,7 @@ class OtherLeadingVehicle(BasicScenario):
     """
 
     def __init__(self, world, ego_vehicles, config, randomize=False, debug_mode=False, criteria_enable=True,
-                 timeout=300):
+                 timeout=80):
         """
         Setup all relevant parameters and create scenario
         """

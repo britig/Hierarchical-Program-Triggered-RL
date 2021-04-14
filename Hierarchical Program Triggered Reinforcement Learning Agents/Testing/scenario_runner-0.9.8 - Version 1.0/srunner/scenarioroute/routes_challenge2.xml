@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<routes>
+	<scenario name="Challenge2" type="Challenge" town="Town03">
+        <straight startx="-119.3" starty="137.8" endx="-90.3" endy="137.3"/>
+        <left_turn startx="-90.3" starty="137.3" endx="-77.2" endy="124.2"/>
+        <straight startx="-77.4" starty="123.0" endx="-90.4" endy="-0.4"/>
+        <straight startx="-90.4" starty="-0.4" endx="-75.3" endy="-121.0"/>
+    </scenario>
+</routes>

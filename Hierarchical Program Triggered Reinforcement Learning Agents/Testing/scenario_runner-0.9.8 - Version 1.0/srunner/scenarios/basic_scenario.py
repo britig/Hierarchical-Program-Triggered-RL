@@ -148,9 +148,12 @@ class BasicScenario(object):
         """
         Remove all actors
         """
-        for i, _ in enumerate(self.other_actors):
-            if self.other_actors[i] is not None:
-                if CarlaActorPool.actor_id_exists(self.other_actors[i].id):
-                    CarlaActorPool.remove_actor_by_id(self.other_actors[i].id)
-                self.other_actors[i] = None
-        self.other_actors = []
+        try:
+            for i, _ in enumerate(self.other_actors):
+                if self.other_actors[i] is not None:
+                    if CarlaActorPool.actor_id_exists(self.other_actors[i].id):
+                        CarlaActorPool.remove_actor_by_id(self.other_actors[i].id)
+                    self.other_actors[i] = None
+            self.other_actors = []
+        except:
+            pass

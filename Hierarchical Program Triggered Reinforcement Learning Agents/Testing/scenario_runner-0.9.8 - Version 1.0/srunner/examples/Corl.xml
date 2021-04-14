@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<scenarios>
+    <scenario name="CorlStraight_1" type="CorlStraight" town="Town01">
+        <ego_vehicle x="392.5" y="195" z="0.5" yaw="90" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_2" type="CorlStraight" town="Town01">
+        <ego_vehicle x="256.6" y="-2.0" z="0.5" yaw="180" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_3" type="CorlStraight" town="Town01">
+        <ego_vehicle x="229.0" y="133.2" z="0.5" yaw="0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_4" type="CorlStraight" town="Town01">
+        <ego_vehicle x="96.6" y="-2.0" z="0.5" yaw="-179.9" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_5" type="CorlStraight" town="Town01">
+        <ego_vehicle x="98.8" y="59.6" z="0.5" yaw="0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_6" type="CorlStraight" town="Town01">
+        <ego_vehicle x="324.6" y="325.6" z="0.5" yaw="179.8" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_7" type="CorlStraight" town="Town01">
+        <ego_vehicle x="244.3" y="325.8" z="0.5" yaw="179.8" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_8" type="CorlStraight" town="Town01">
+        <ego_vehicle x="160.0" y="326.1" z="0.5" yaw="179.8" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_9" type="CorlStraight" town="Town01">
+        <ego_vehicle x="84.8" y="326.2" z="0.5" yaw="179.8" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_10" type="CorlStraight" town="Town02">
+        <ego_vehicle x="193.2" y="242.7" z="0.5" yaw="-88.8" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_11" type="CorlStraight" town="Town02">
+        <ego_vehicle x="92.3" y="187.9" z="0.5" yaw="-180.0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_12" type="CorlStraight" town="Town02">
+        <ego_vehicle x="-4.7" y="243.6" z="0.5" yaw="-89.5" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_13" type="CorlStraight" town="Town02">
+        <ego_vehicle x="33.6" y="109.6" z="0.5" yaw="-0.5" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_14" type="CorlStraight" town="Town02">
+        <ego_vehicle x="190.6" y="120.0" z="0.5" yaw="90.9" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_15" type="CorlStraight" town="Town02">
+        <ego_vehicle x="190.3" y="198.1" z="0.5" yaw="90.5" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="CorlStraight_16" type="CorlStraight" town="Town02">
+        <ego_vehicle x="174.5" y="303.3" z="0.5" yaw="-180.0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_1" type="OneTurn" town="Town01">
+        <ego_vehicle x="325.0" y="133.2" z="0.5" yaw="0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_1" type="OneTurn" town="Town01">
+        <ego_vehicle x="325.0" y="133.2" z="0.5" yaw="0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_2" type="OneTurn" town="Town01">
+        <ego_vehicle x="395.9" y="35.6" z="0.5" yaw="-90" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_3" type="OneTurn" town="Town01">
+        <ego_vehicle x="335.1" y="160.4" z="0.5" yaw="92.2" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_4" type="OneTurn" town="Town01">
+        <ego_vehicle x="285.4" y="199.1" z="0.5" yaw="0.0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_5" type="OneTurn" town="Town02">
+        <ego_vehicle x="184.2" y="238.2" z="0.5" yaw="-177.9" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="OneTurn_6" type="OneTurn" town="Town02">
+        <ego_vehicle x="135.1" y="222.0" z="0.5" yaw="-90" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="Navigation_1" type="Navigation" town="Town01">
+        <ego_vehicle x="250.0" y="133.2" z="0.5" yaw="0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="Navigation_2" type="Navigation" town="Town01">
+        <ego_vehicle x="167.8" y="130.0" z="0.5" yaw="-179.0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="Navigation_3" type="Navigation" town="Town01">
+        <ego_vehicle x="1.6" y="60.0" z="0.5" yaw="-90.6" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="Navigation_4" type="Navigation" town="Town02">
+        <ego_vehicle x="64.4" y="241.6" z="0.5" yaw="0.0" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+    <scenario name="Navigation_5" type="Navigation" town="Town02">
+        <ego_vehicle x="184.2" y="238.2" z="0.5" yaw="-177.9" model="vehicle.lincoln.mkz2017" />
+    </scenario>
+</scenarios>

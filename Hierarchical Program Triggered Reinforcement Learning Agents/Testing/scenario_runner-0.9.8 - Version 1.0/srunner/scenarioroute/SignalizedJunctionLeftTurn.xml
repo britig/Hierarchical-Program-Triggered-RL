@@ -2,7 +2,7 @@
 <scenarios>
     <scenario name="SignalizedJunctionLeftTurn_1" type="SignalizedJunctionLeftTurn" town="Town03">
         <straight startx="-133.7" starty="137.4" endx="-85.9" endy="137.4"/>
-        <left_turn startx="-85.9" starty="137.4" endx="-77.15" endy="127.5"/>
+        <left_turn startx="-85.9" starty="137.4" endx="-72.7" endy="123.0"/>
 		<straight startx="-73.6" starty="117.0" endx="-73.6" endy="70"/>
      </scenario>
 </scenarios>

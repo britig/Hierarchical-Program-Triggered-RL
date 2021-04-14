@@ -13,7 +13,7 @@ The agent also responds to traffic lights. """
 from enum import Enum
 
 import carla
-from agents.tools.misc import is_within_distance_ahead, compute_magnitude_angle, target_magnitude,distance_vehicle
+from agents.tools.misc import is_within_distance_ahead, compute_magnitude_angle, target_magnitude
 
 
 class AgentState(Enum):
@@ -92,15 +92,15 @@ class Agent(object):
 
         for traffic_light in lights_list:
             object_waypoint = self._map.get_waypoint(traffic_light.get_location())
-            if object_waypoint.road_id != ego_vehicle_waypoint.road_id or \
-                    object_waypoint.lane_id != ego_vehicle_waypoint.lane_id:
-                continue
-
-            if is_within_distance_ahead(traffic_light.get_transform(),
-                                        self._vehicle.get_transform(),
-                                        self._proximity_threshold):
-                if traffic_light.state == carla.TrafficLightState.Red:
-                    return (True, traffic_light)
+            waypoint_list = ego_vehicle_waypoint.next(10)
+            distance = False
+            for waypoint in waypoint_list:
+                if(waypoint.road_id == object_waypoint.road_id):
+                    norm_target = target_magnitude((waypoint.transform.location.x,waypoint.transform.location.y),(traffic_light.get_transform().location.x,traffic_light.get_transform().location.y))
+                    distance = is_within_distance_ahead(traffic_light.get_transform(),waypoint.transform,5)
+                    #print(f'norm_target =========== {norm_target}')
+                    if distance and traffic_light.state == carla.TrafficLightState.Red:
+                        return (True, traffic_light)
 
         return (False, None)
 
@@ -248,17 +248,17 @@ class Agent(object):
                     target_vehicle_loc_list.append((target_loc_x,target_loc_y))
                     ego_vehicle_waypoint_list.append(ego_vehicle_waypoint_list[i].next(1)[0])
                     target_vehicle_waypoint_list.append(target_vehicle_waypoint_list[i].next(1)[0])
-                print('========= BOTH VEHICLES IN JUNCTION')
+                #print('========= BOTH VEHICLES IN JUNCTION')
                 #print(f'=============Ego vehicle location list {ego_vehicle_loc_list}')
                 #print(f'=============target vehicle location list {target_vehicle_loc_list}')
                 intersection_list = self.intersection(ego_vehicle_loc_list,target_vehicle_loc_list)
                 #print(f'============= intersection between two lists {intersection_list}')
                 #If the routes intersect the intersection list is non empty
-                if len(intersection_list)!=0 and ego_vehicle_waypoint.get_junction().id!=172:
+                if len(intersection_list)!=0:
                     #Calculate the normal distance from the first location to the intersection location
                     target_diff = target_magnitude(target_vehicle_loc_list[0],intersection_list[0])
                     ego_diff = target_magnitude(ego_vehicle_loc_list[0],intersection_list[0])
-                    print(f'============= Diff ===== target==== {target_diff} == egodiff == {ego_diff}')
+                    #print(f'============= Diff ===== target==== {target_diff} == egodiff == {ego_diff}')
                     #Block the ego vehicle only if the other vehicle has higher route priority
                     if(target_diff<ego_diff):
                         return (True, target_vehicle)
@@ -278,27 +278,10 @@ class Agent(object):
                 continue
             if is_within_distance_ahead(static_obstacle.get_transform(),
                                         self._vehicle.get_transform(),
-                                        18):
+                                        15):
                 return (True, static_obstacle)
         return (False, None)
 
-
-    #Check if the target lane is clear for lane shift
-    def _is_next_lane_clear(self,next_lane_waypoint,vehicle_list):
-        approx_distance_waypoint = next_lane_waypoint.previous(20)[0]
-        print(f'approx_distance_waypoint======={approx_distance_waypoint}')
-        for target_vehicle in vehicle_list:
-            target_vehicle_waypoint = self._map.get_waypoint(target_vehicle.get_location())
-            # do not account for the vehicles on the non target lane
-            if target_vehicle_waypoint.lane_id != next_lane_waypoint.lane_id:
-                continue
-            print(f'target_vehicle_waypoint======={target_vehicle_waypoint}')
-            if is_within_distance_ahead(approx_distance_waypoint.transform,
-                                        target_vehicle.get_transform(),
-                                        45):
-                return False
-
-        return True
 
 
     def emergency_stop(self):

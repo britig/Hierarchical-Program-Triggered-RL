@@ -16,6 +16,7 @@ import math
 import traceback
 import xml.etree.ElementTree as ET
 import numpy.random as random
+import pickle
 
 import py_trees
 
@@ -188,7 +189,8 @@ class RouteScenario(BasicScenario):
         self.target = self.route[-1][0]
         CarlaDataProvider.set_ego_vehicle_route(convert_transform_to_location(self.route))
 
-        config.agent.set_global_plan(gps_route, self.route)
+        #Commenting this out because we want to run our own agent in pygame mode
+        #config.agent.set_global_plan(gps_route, self.route)
 
         # Sample the scenarios to be used for this route instance.
         self.sampled_scenarios_definitions = self._scenario_sampling(potential_scenarios_definitions)
@@ -332,6 +334,10 @@ class RouteScenario(BasicScenario):
             if scenario_choice is not None:
                 sampled_scenarios.append(scenario_choice)
 
+        sampled_scenarios = [{'name': 'Scenario1', 'other_actors': None, 'trigger_position': {'pitch': '0', 'x': '-10', 'y': '134', 'yaw':'-1.29', 'z':'1.0'}, 'scenario_type': 'valid'},{'name': 'Scenario7', 'other_actors': {'front': [{'pitch': '0.0', 'x': '-84.96', 'y': '100.6', 'yaw': '89.67984', 'z': '1.0'}, {'pitch': '0.0', 'x': '-88.25', 'y': '100.7', 'yaw': '89.67984', 'z': '1.0'}], 'left': [{'pitch': '0.0', 'x': '-116.82', 'y': '136.82', 'yaw': '359.67984', 'z': '1.0'}], 'right': [{'pitch': '0.0', 'x': '-45.81', 'y': '131.12', 'yaw': '179.67981', 'z': '1.0'}]}, 'trigger_position': {'pitch': '0.0', 'x': -73.85211944580078, 'y': 164.83070373535156, 'yaw': 258.85479736328125, 'z': 0.0}, 'scenario_type': 'S7opposite'}, {'name': 'Scenario4', 'other_actors': {'front': [{'pitch': '0.0', 'x': '33.55', 'y': '130.76', 'yaw': '178.835144', 'z': '1.0'}], 'left': [{'pitch': '0.0', 'x': '-5.37', 'y': '102.33', 'yaw': '88.835144', 'z': '1.0'}, {'pitch': '0.0', 'x': '-9.4', 'y': '102.48', 'yaw': '88.835144', 'z': '1.0'}], 'right': [{'pitch': '0.0', 'x': '2.93', 'y': '163.65', 'yaw': '268.835144', 'z': '1.0'}, {'pitch': '0.0', 'x': '6.34', 'y': '163.79', 'yaw': '268.835144', 'z': '1.0'}]}, 'trigger_position': {'pitch': '0', 'x': -37.43, 'y': 135.7, 'yaw': 358.0, 'z': 1.0}, 'scenario_type': 'S4right'}, {'name': 'Scenario4', 'other_actors': {'left': [{'pitch': '0.0', 'x': '-145.48', 'y': '30.80', 'yaw': '270.041382', 'z': '1.0'}], 'right': [{'pitch': '0.0', 'x': '-149.11', 'y': '-34.77', 'yaw': '90.041351', 'z': '1.0'}]}, 'trigger_position': {'pitch': '0', 'x': -116.7, 'y': -3.3, 'yaw': 180.0, 'z': 1.0}, 'scenario_type': 'S4left'}, {'name': 'Scenario4', 'other_actors': {'front': [{'pitch': '0.0', 'x': '-85.17', 'y': '-34.11', 'yaw': '90.289825', 'z': '1.3'}], 'left': [{'pitch': '0.0', 'x': '-121.96', 'y': '0.24', 'yaw': '0.289825', 'z': '1.3'}], 'right': [{'pitch': '0.0', 'x': '-40.36', 'y': '-2.78', 'yaw': '180.289825', 'z': '1.3'}]}, 'trigger_position': {'pitch': '359.0536804199219', 'x': -77.77780151367188, 'y': 31.9595947265625, 'yaw': 269.84375, 'z': 0.13858206570148468}, 'scenario_type': 'S4left'}, {'name': 'Scenario1', 'other_actors': None, 'trigger_position': {'pitch': '0', 'x': -77.7, 'y': 69.11, 'yaw': 270.0, 'z': 2.62}, 'scenario_type': 'valid'}, {'name': 'Scenario1', 'other_actors': None, 'trigger_position': {'pitch': '360.0', 'x': 5.094234466552734, 'y': 69.08776092529297, 'yaw': 269.637451171875, 'z': 0.0}, 'scenario_type': 'valid'}, {'name': 'Scenario1', 'other_actors': None, 'trigger_position': {'pitch': '0', 'x': -9.24, 'y': 170.42, 'yaw': 90.0, 'z': 1.0}, 'scenario_type': 'valid'}, {'name': 'Scenario10', 'other_actors': {'left': [{'pitch': '0.0', 'x': '-120.9', 'y': '41.36', 'yaw': '134.365295', 'z': '0.99'}]}, 'trigger_position': {'pitch': '0', 'x': -149.58, 'y': 40.72, 'yaw': 90.0, 'z': 0.99}, 'scenario_type': 'valid'}]
+
+        #print(f'sampled scenario ============ {sampled_scenarios}')
+
         return sampled_scenarios
 
     def _build_master_scenario(self, world, ego_vehicle, route, town_name, timeout=300, debug_mode=False):
@@ -369,7 +375,7 @@ class RouteScenario(BasicScenario):
         transform = carla.Transform()
 
         if town_name == 'Town01' or town_name == 'Town02':
-            amount = 120
+            amount = 20
         elif town_name == 'Town03' or town_name == 'Town05':
             amount = 120
         elif town_name == 'Town04':
@@ -385,6 +391,8 @@ class RouteScenario(BasicScenario):
 
         actor_configuration_instance = ActorConfigurationData(
             model, transform, rolename='background', autopilot=True, random=True, amount=amount)
+        print(f'actor_config ======= {actor_configuration_instance.random_location}')
+        
         scenario_configuration.other_actors = [actor_configuration_instance]
 
         return BackgroundActivity(world, [ego_vehicle], scenario_configuration,
