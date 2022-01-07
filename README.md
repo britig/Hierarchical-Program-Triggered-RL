@@ -1,5 +1,5 @@
 # Hierarchical-Program-Triggered-RL
-This folder contains the experiments and code for Hierarchical Program Triggered RL paper (In Submission). Entire framework is built on CARLA version 0.9.8 : https://carla.org/2020/03/09/releas and Python 3.6 and above. The sub dependencies are mentioned inside each folder.
+This folder contains the experiments and code for Hierarchical Program Triggered RL paper (https://ieeexplore.ieee.org/document/9497870). Entire framework is built on CARLA version 0.9.8 : https://carla.org/2020/03/09/releas and Python 3.6 and above. The sub dependencies are mentioned inside each folder.
 
 ## Folder Structure
 
